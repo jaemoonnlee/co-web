@@ -25,10 +25,10 @@
     position: relative;
 }
 
-.box_before {
+.box_before::before {
     content: "";
     background-size: cover;
-    opacity: 0.85;
+    opacity: 0.80;
     position: absolute;
     background-color: white;
     top: 0px;
