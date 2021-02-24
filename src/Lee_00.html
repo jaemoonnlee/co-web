@@ -14,14 +14,14 @@
     <script>hljs.initHighlightingOnLoad();</script>
     <!-- jquery& js -->
     <script src="js/jquery-3.5.1.js"></script>
-    <script src="js/MyScript.js"></script>
+    <!-- <script src="js/MyScript.js"></script> -->
 </head>
 
 <body>
     <header id="main_header">
         <div id="title">
             <h1>Coding Test</h1>
-            <h2 style="padding-left: 50px;">From Basic</h2>
+            <h2 style="padding-left: 50px;">From Kakao 2021 Blind</h2>
         </div>
         <nav id="main_gnb">
             <ul>
@@ -43,7 +43,16 @@
     </div> -->
     <div id="content">
         <section id="main_section">
-            <article class="main_article">
+            <article class="main_article explain">
+                <p class="initHighlight left">Pick a quiz in Kakao tab then try it OR</p>
+                <br>
+                <p class="initHighlight center">Pick one in Solved tab and see what i did.</p>
+                <br>
+                <p class="initHighlight right">Another options are on header right-bottom side</p>
+                <p class="initHighlight"></p>
+
+            </article>
+            <article class="main_article pad">
                 <input id="qq" type="checkbox" checked>
                 <label for="qq">
                     <h1>문제</h1>
@@ -51,11 +60,11 @@
                 <br>
                 <div id="question">
                     <div>
-                        <p>Pick a thing in Solved tab.</p>
+                        <!-- blank -->
                     </div>
                 </div>
             </article>
-            <article class="main_article">
+            <article class="main_article pad">
                 <input id="ss" type="checkbox">
                 <label for="ss">
                     <h1>소스코드</h1>
@@ -82,7 +91,7 @@
                                 <!-- <img src="http://placehold.it/45x45" alt=""> -->
                             </div>
                             <div class="description"><strong>문제 1 – 아이디 추천</strong>
-                                <p>2021-02-18</p>
+                                <p>2021-02-19</p>
                             </div>
                         </a></li>
                     <li class="item"><a href="#" onclick="show03()">
@@ -90,25 +99,22 @@
                                 <!-- <img src="http://placehold.it/45x45" alt=""> -->
                             </div>
                             <div class="description"><strong>문제 3 – 순위 검색</strong>
-                                <p>2021-02-18</p>
+                                <p>2021-02-22</p>
                             </div>
                         </a></li>
                 </ul>
             </div>
             <div class="tab_item">
                 <ul>
-                    <li class="item"><a href="https://programmers.co.kr/competitions/317/2021-kakao-blind-recruitment"
+                    <!-- <li class="item"><a href="https://programmers.co.kr/competitions/317/2021-kakao-blind-recruitment"
                             target="_blank" rel="noopener noreferrer">
-                            <div class="thumbnail">
-                                <!-- <img src="http://placehold.it/45x45" alt=""> -->
-                            </div>
                             <div class="description">
                                 <p>접수</p>
                                 <strong>20년 08월 24일 11:00 ~ 09월 07일 19:00</strong>
                                 <p>테스트</p>
                                 <strong>20년 09월 12일 14:00 ~ 09월 26일 19:00</strong>
                             </div>
-                        </a></li>
+                        </a></li> -->
                     <li class="item"><a href="https://programmers.co.kr/learn/courses/30/lessons/72410" target="_blank"
                             rel="noopener noreferrer">
                             <div class="thumbnail">
@@ -177,10 +183,16 @@
         function show01() {
             $("#question").load("kakao2021_01_01_q.html");
             $("#solve").load("kakao2021_01_01.html");
+            $(".explain").css("display", "none");
+            $(".pad").css("display", "block");
+            $(".pad").css("visibility", "visible");
         }
         function show03() {
             $("#question").load("kakao2021_01_03_q.html");
             $("#solve").load("kakao2021_01_03.html");
+            $(".explain").css("display", "none");
+            $(".pad").css("display", "block");
+            $(".pad").css("visibility", "visible");
         }
         // TODO lnb
         // TODO 배경
