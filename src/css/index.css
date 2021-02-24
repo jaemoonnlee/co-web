@@ -23,6 +23,7 @@
 }
 
 body {
+    min-width: 965px;
     background-color: white;
 }
 
