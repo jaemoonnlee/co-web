@@ -594,15 +594,19 @@ div.blank {
     /* display: grid; */
     text-align: left;
 }
-p.left{
+
+p.left {
     text-align: left;
 }
-p.center{
+
+p.center {
     text-align: center;
 }
-p.right{
+
+p.right {
     text-align: right;
 }
+
 p.initHighlight::first-letter {
     font-size: 180%;
     font-weight: bold;
@@ -612,4 +616,18 @@ p.initHighlight::first-letter {
 .pad {
     display: none;
     visibility: hidden;
+}
+
+.boxsizingBorder {
+    width: 100%;
+    /* overflow: visible; */
+}
+
+#useDeco {
+    padding-left: 15px;
+}
+
+#useDeco>li {
+    list-style: circle;
+    /* padding-left: 5px; */
 }
