@@ -156,7 +156,7 @@ img {
 }
 @font-face {
     font-family: '본문';
-    src: url('NanumBarunGothic.ttf'),url('NanumBarunGothicUltraLight.ttf'),url('NanumBarunGothicLight.ttf'),url('NanumBarunGothicBold.ttf');
+    src: url('..\co-web\NanumBarunGothic.ttf'),url('..\co-web\co-web/NanumBarunGothicUltraLight.ttf'),url('..\co-web\co-web/NanumBarunGothicLight.ttf'),url('..\co-web\co-web/NanumBarunGothicBold.ttf');
 }
 p{
     font-family: '본문';
